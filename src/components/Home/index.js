@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TodoItem from '../TodoItem';
+import TodoItem from '../TodoItem'
 import './index.css';
 
 function Home() {
@@ -30,16 +30,17 @@ function Home() {
   };
 
   return (
-    <div className="app">
-      <h1>Claw Assignement - Easy</h1>
-      <form onSubmit={addTodo}>
+    <div className="todo-app">
+      <h1 className="todo-app-title">Todo App</h1>
+      <form className="todo-app-form" onSubmit={addTodo}>
         <input 
           type="text" 
+          className="todo-app-input" 
           value={input} 
           onChange={(e) => setInput(e.target.value)} 
           placeholder="Enter a todo"
         />
-        <button type="submit">Add Todo</button>
+        <button type="submit" className="todo-app-button">Add Todo</button>
       </form>
       <div className="todo-list">
         {todos.map((todo, index) => (
