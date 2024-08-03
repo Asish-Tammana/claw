@@ -1,0 +1,62 @@
+.todo-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+  }
+  
+  .todo-item.completed {
+    background-color: #e0ffe0;
+  }
+  
+  .todo-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .todo-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .todo-item .todo-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .todo-item .completed-text {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .todo-item .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .todo-item button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .todo-item button:hover {
+    background-color: #c82333;
+  }
+  
+  .todo-item button:nth-child(2) {
+    background-color: #0072ff;
+  }
+  
+  .todo-item button:nth-child(2):hover {
+    background-color: #005bb5;
+  }
+  
