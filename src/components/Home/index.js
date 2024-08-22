@@ -11,6 +11,7 @@ function Home() {
     if (input.trim() === '') return;
     setTodos([...todos, { text: input, completed: false }]);
     setInput('');
+    console.log("home")
   };
 
   const deleteTodo = (index) => {
