@@ -12,6 +12,7 @@ function TodoItem({ todo, index, deleteTodo, editTodo, toggleComplete }) {
   const handleSave = () => {
     editTodo(index, newText);
     setIsEditing(false);
+    console.log("TodoItem")
   };
 
   const handleCheckboxChange = () => {
